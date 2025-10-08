@@ -7,6 +7,10 @@ li {
     list-style: none;
 }
 
+img {
+    width: 100%;
+}
+
 :root {
     /*=============== color =================*/
     --white: #fff;
@@ -22,7 +26,7 @@ li {
 /*=============== font =================*/
 html {
     font-size: 62.5%;
-    /*1rem = 10px */
+    /*1em = 10px */
     font-family: "Shippori Mincho", serif;
     font-weight: 400;
     font-style: normal;
@@ -45,10 +49,11 @@ header
 main
 --------------------------------------------------------------*/
 .main-view {
-    background-color: rgb(165, 165, 165);
+    background: url(../img/img_mv_pc.jpg) center/cover no-repeat;
+    padding-top: 67.62%;
     position: relative;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #ttl {
@@ -57,14 +62,48 @@ main
     position: absolute;
     top: 43.78%;
     color: var(--white);
-    font-size: 4rem;
+    font-size: 4em;
     font-weight: normal;
-    letter-spacing: .75rem;
+    letter-spacing: .75em;
+}
+
+.ttl-bg {
+    padding-top: 45.08%;
+    position: absolute;
+    left: 50%;
+    bottom: -1.85%;
+    bottom: -26px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 46.01%, rgba(255, 255, 255, 0.5) 62.47%, #FFFFFF 91.54%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.ttl-txt {
+    width: 50.78%;
+    margin: 0 auto;
+    border-bottom: 1px solid;
+    padding-bottom: .4em;
+    letter-spacing: .3em;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
 }
 
 .content-wrap {
-    width: var(--content-width);
     margin: 0 auto;
+    margin-top: -8.06%;
+    width: 100%;
+    z-index: 99;
+    position: relative;
+}
+
+.content-wrap::before {
+    display: block;
+    content: "";
+    width: 95.51%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #9A9A9A;
 }
 
 .section-ttl {
@@ -73,19 +112,23 @@ main
 
 /*=============== works =================*/
 .works {
-    background-color: green;
-    width: 100%;
+    width: var(--content-width);
+    margin: 0 auto;
 }
 
 #works {
-    font-size: 1.6rem;
-    color: var(--light-grey);
+    color: #848484;
+    padding-top: 1.82%;
+    font-size: 1.6em;
+    font-family: "Inria Serif", serif;
+    font-style: italic;
 }
 
 .work-content-wrap {
     margin-top: 7.42%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .work-content {
@@ -98,7 +141,12 @@ main
 }
 
 .work-img-wrap {
-    background-color: #848484;
+    position: relative;
+}
+
+.work-img {
+    position: absolute;
+    top: 0;
 }
 
 /* --- work-content --- */
@@ -170,40 +218,86 @@ main
 .work-txt-wrap {
     margin-top: 5.88%;
 }
-/*=============== news =================*/
-.news{
-    margin-top: 7.89%;
-    background-color: #916e6e;
+
+.work-num,
+.work-category {
+    font-family: "Roboto", sans-serif;
+    font-size: .6rem;
+    font-weight: bold;
+    color: var(--dark-grey);
 }
-.section-ttl02{
+
+.work-category {
+    margin-top: 4.41%;
+}
+
+.work-ttl {
+    margin-top: 7.35%;
+    font-family: "IM Fell Great Primer SC", serif;
+}
+
+/*=============== news =================*/
+.news {
+    margin: 7.42% auto 0;
+    width: var(--content-width);
+}
+
+.section-ttl02 {
     text-align: center;
     color: var(--dark-grey);
 }
-.news-content-wrap{
+
+.news-content-wrap {
     margin-top: 4.25%;
+    display: flex;
+    justify-content: space-between;
 }
-.news-content{
+
+.news-content {
     width: 27.92%;
 }
-.news-img-wrap{
+
+.news-img-wrap {
     width: 100%;
     padding-top: 63.04%;
     border-radius: 31px 47px 7px 38px;
-    background-color: rgb(123, 153, 143);
-
+    position: relative;
 }
-.news-date{
+
+.news-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.news-date {
     margin: 3.26% 0 2.17%;
 }
-.news-txt{
+
+.news-txt {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.news-arrow{
+
+.news-arrow {
     display: block;
     content: "";
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 2.4em;
+    height: 2.4em;
     background-color: #848484;
+}
+
+.news-archive {
+    text-align: center;
+}
+
+/*--------------------------------------------------------------
+footer
+--------------------------------------------------------------*/
+.footer-menu {
+    display: flex;
+    width: 24.11%;
+    margin: 0 auto;
+    justify-content: space-between;
 }
