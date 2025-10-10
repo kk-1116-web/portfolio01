@@ -41,11 +41,14 @@
     <!--▼ main ---------------------------------------------------------------------------------------------▼-->
     <main>
         <div class="main-view">
-            <h1 id="ttl">
-                <div class="ttl-txt">
-                    Title
-                </div>
-            </h1>
+            <div class="ttl-wrap">
+                <h1 id="ttl">
+                    <div class="ttl-txt">
+                        Title
+                    </div>
+                </h1>
+            </div>
+
             <div class="ttl-bg"></div>
         </div>
         <article class="content-wrap">
@@ -255,7 +258,11 @@
 
                 </ul>
                 <div class="news-archive">
-                    <a href="#"> All News</a>
+                    <a href="#" class="news-archive-link"> All News
+                        <i class="news-archive-arrow">
+                            <img src="./asset/img/arrow_news.svg" alt="">
+                        </i>
+                    </a>
                 </div>
             </section>
         </article>
@@ -266,20 +273,25 @@
     <footer>
         <ul class="footer-menu">
             <li class="footer-content">
-                <a href="#">Top</a>
+                <a href="#" class="footer-content-link">Top</a>
             </li>
+            <div class="footer-line"></div>
             <li class="footer-content">
-                <a href="#">About Us</a>
+                <a href="#" class="footer-content-link">About Us</a>
             </li>
+            <div class="footer-line"></div>
             <li class="footer-content">
-                <a href="#">Works</a>
+                <a href="#" class="footer-content-link">Works</a>
             </li>
+            <div class="footer-line"></div>
             <li class="footer-content">
-                <a href="#">News</a>
+                <a href="#" class="footer-content-link">News</a>
             </li>
         </ul>
     </footer>
     <!--▲ footer ---------------------------------------------------------------------------------------------▲-->
+    <!-- js -->
+    <script src="./asset/js/script.js"></script>
 </body>
 
 </html>
