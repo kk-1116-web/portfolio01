@@ -57,27 +57,15 @@ main
 }
 
 .ttl-wrap {
-    height: 100vh;
-    width: 100%;
     position: relative;
-    top: 0;
-}
-/* もし、main-viewの高さがウィンドウの高さより高ければ ttl-wrapを使う
-低ければmain-viewを使う */
-.main-view {
-       position: relative;
     width: 100%;
+    height: 100vh;
     background: url(../img/img_mv_pc.jpg) center/cover no-repeat;
-    padding-top: 67.62%;
 }
 
-.ttl-wrap {
-    position: relative; /* まず絶対はやめる */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* もし、main-viewの高さがウィンドウの高さより高ければ ttl-wrapを使う
+低ければmain-viewを使う */
+
 
 #ttl {
     width: 100%;
@@ -97,7 +85,7 @@ main
     padding-top: 45.08%;
     position: absolute;
     left: 50%;
-    bottom: -1.85%;
+    bottom: -2.49%;
     /* bottom: -26px; */
     width: 100%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 46.01%, rgba(255, 255, 255, 0.5) 62.47%, #FFFFFF 91.54%);
@@ -117,7 +105,6 @@ main
 
 .content-wrap {
     margin: 0 auto;
-    margin-top: -8.06%;
     width: 100%;
     z-index: 99;
     position: relative;
@@ -276,7 +263,7 @@ main
 
 .section-ttl02 {
     text-align: center;
-    font-size: clamp(1.9em,1.36vw,3.2em);
+    font-size: clamp(1.9em, 1.36vw, 3.2em);
     font-weight: 400;
     color: var(--dark-grey);
 }
@@ -354,8 +341,9 @@ main
 
 .news-archive-link {
     color: var(--dark-grey);
-    font-size: 1.4em;
+    font-size: clamp(1.4em, 1vw, 4em);
     letter-spacing: .07em;
+    text-decoration: none;
 }
 
 .news-archive-arrow {
@@ -375,7 +363,7 @@ footer
 }
 
 .footer-content-link {
-    font-size: 1.5em;
+    font-size: clamp(1.2em,1vw,3em);
     color: var(--dark-grey);
     letter-spacing: .03rem;
     text-decoration: none;
