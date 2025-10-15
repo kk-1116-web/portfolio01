@@ -374,3 +374,16 @@ footer
     width: 1px;
     padding-top: 5.47%;
 }
+
+@media screen and (max-width:600px) {
+  .work-content-wrap{
+    flex-direction: column;
+  }
+  .work-content{
+    width: 77.5%;
+    margin: 0 auto 35%;
+  }
+  .work-content:nth-of-type(3){
+    margin-left: 0;
+  }
+}
