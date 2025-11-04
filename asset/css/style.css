@@ -81,28 +81,30 @@ header
 #header {
     width: 100%;
     position: relative;
+    z-index: 100;
+}
+
+.menu-wrap {
+    position: absolute;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    margin: 1.71% 0 0 2.28%;
 }
 
 .menu {
-    color: var(--white);
+     color: var(--white);
     font-size: clamp(1.2em, 1vw, 4em);
     letter-spacing: .03em;
     text-decoration: none;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.79);
+}
 
-}
-.menu-wrap{
-        position: absolute;
-    top: 1.71%;
-    left: 2.28%;
-    z-index: 99;
-    /* position: fixed; */
-    width: 100%;
-}
-.menu-inner{
+.menu-inner {
     width: 50%;
     height: 100vh;
 }
+
 /*--------------------------------------------------------------
 main
 --------------------------------------------------------------*/
