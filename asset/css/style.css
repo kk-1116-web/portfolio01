@@ -56,7 +56,7 @@ animation
 
 @keyframes SlideIn {
     0% {
-        transform: translateX(10%);
+        transform: translateX(2%);
         opacity: 0;
     }
 
@@ -79,15 +79,30 @@ animation
 header
 --------------------------------------------------------------*/
 #header {
-    position: absolute;
-    top: 1.71%;
-    left: 2.28%;
+    width: 100%;
+    position: relative;
 }
 
 .menu {
     color: var(--white);
-}
+    font-size: clamp(1.2em, 1vw, 4em);
+    letter-spacing: .03em;
+    text-decoration: none;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.79);
 
+}
+.menu-wrap{
+        position: absolute;
+    top: 1.71%;
+    left: 2.28%;
+    z-index: 99;
+    /* position: fixed; */
+    width: 100%;
+}
+.menu-inner{
+    width: 50%;
+    height: 100vh;
+}
 /*--------------------------------------------------------------
 main
 --------------------------------------------------------------*/
@@ -105,9 +120,6 @@ main
     height: 100vh;
     background: url(../img/img_mv_pc.jpg) center/cover no-repeat;
 }
-
-/* もし、main-viewの高さがウィンドウの高さより高ければ ttl-wrapを使う
-低ければmain-viewを使う */
 
 
 #ttl {
@@ -192,16 +204,20 @@ main
     margin-right: 5.61%;
     opacity: 0;
 }
-.work-content-link{
+
+.work-content-link {
     text-decoration: none;
     color: var(--dark-grey);
 }
-.work-content-link:hover{
+
+.work-content-link:hover {
     opacity: .5;
 }
-.work-content-link:hover .work-img-wrap{
+
+.work-content-link:hover .work-img-wrap {
     border-radius: 30%;
 }
+
 .work-content:nth-of-type(4n) {
     margin-right: 0;
 }
@@ -409,7 +425,7 @@ main
     opacity: 0;
     text-align: center;
     margin-top: 3.26%;
-    transform: translateX(-10%);
+    transform: translateX(2%);
 }
 
 .news-archive-link {
