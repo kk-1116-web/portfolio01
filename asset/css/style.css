@@ -116,8 +116,12 @@ header
     left: 0;
     background: url(/asset/img/img_bg_menu.png)center/cover no-repeat;
     color: var(--white);
+    transform: translateX(-100%);
+    transition: .8s;
 }
-
+.menu-inner.is-visible{
+    transform: translateX(0);
+}
 .menu-inner-txt-box {
     font-size: 1.4em;
     text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
