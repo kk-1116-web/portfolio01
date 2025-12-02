@@ -118,7 +118,7 @@ header
     position: absolute;
     top: 0;
     left:0;
-    background: url(/asset/img/img_bg_menu.png)center/cover no-repeat;
+    background: url(../asset/img/img_bg_menu.png)center/cover no-repeat;
     color: var(--white);
     transform: translateX(-100%);
     transition: .8s;
