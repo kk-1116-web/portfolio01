@@ -2,6 +2,10 @@
 /*--------------------------------------------------------------
 common
 --------------------------------------------------------------*/
+* {
+    /* なめらかにスクロール */
+     scroll-behavior: smooth;
+}
 
 li {
     list-style: none;
@@ -113,7 +117,7 @@ header
     height: 100vh;
     position: absolute;
     top: 0;
-    left: 0;
+    left:0;
     background: url(/asset/img/img_bg_menu.png)center/cover no-repeat;
     color: var(--white);
     transform: translateX(-100%);
@@ -130,6 +134,7 @@ header
     height: 75.52%;
     margin: 0 auto;
 }
+
 /* .menu-inner-content-wrap::after{
     content: "";
   display: block;
@@ -149,7 +154,7 @@ header
 
 .menu-inner-img-box {
     height: 65.71%;
-    /* width: 100%; */
+    width: 100%;
     aspect-ratio: 44/57;
     margin: 0 auto;
 }
@@ -524,8 +529,21 @@ footer
 .footer-line:last-child {
     display: none;
 }
-
+.menu-footer:hover{
+    cursor: pointer;
+}
 @media screen and (max-width:600px) {
+.menu-inner {
+    width: 100%;
+    left: -100%;
+    border-radius: 0;
+}
+.menu-inner.menu-inner.is-visible {
+    left: 0;
+}
+.menu-inner.is-visible {
+    transform: translateX(0);
+}
     #works {
         padding-top: 7.5%;
         margin-left: 11.25%;

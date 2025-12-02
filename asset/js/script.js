@@ -1,6 +1,7 @@
 
-// menuの閉開
-const menuButtons = document.querySelectorAll('.menu'); // 2つとも取得
+// aboutの閉開
+// クリック対象となるボタンをまとめて取得
+const menuButtons = document.querySelectorAll('.menu, .menu-footer');
 const menuInner = document.querySelector('.menu-inner');
 
 menuButtons.forEach(btn => {
